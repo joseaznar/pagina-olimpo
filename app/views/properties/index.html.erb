@@ -1,0 +1,27 @@
+<div class="jumbotron" src="https://hd.unsplash.com/photo-1459011200906-bc15a5c65573">
+<h1 style="margin: 100px; ">Tenemos el espacio perfecto para ti</h1>
+</div>
+<p class="texto">Propiedades en venta</p>
+<div>  
+  <% @ventas.each do |venta| %>
+    <div class = "propiedad">
+      <div class="image-container">
+	    <img src="https://hd.unsplash.com/photo-1444676632488-26a136c45b9b" style="imagen">
+	  </div>
+	    <ul>
+	      <li style="color: red;">
+	  		<p>$<%= venta.precio_venta %></p>
+	      </li>
+	      <li>
+	  		<p>Dirección:  <%= venta.direccion %></p>
+	      </li>
+	      <li>
+	  		<p>Metros cuadraos:  <%= venta.metros_cuadrados %></p>
+	      </li>
+	      <li>
+	  		<p>Descripción: <%= venta.descripcion %> </p>
+	      </li>
+	    </ul>
+    </div>
+  <% end %>
+</div>

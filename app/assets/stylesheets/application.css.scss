@@ -1,0 +1,54 @@
+@import "bootstrap";
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ff5451;
+}
+
+/* Float the list items side by side */
+ul.topnav li {float: left;}
+
+/* Style the links inside the list items */
+.texto {
+    display: inline-block;
+    color: #808080;
+    text-align: center;
+    margin: 18px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 22px;
+}
+
+.navbar-brand{
+  text-align: center;
+  margin: 15px;
+  font-size: 24px;
+}
+p.texto{
+  margin-top: 25px;
+}
+/* Change background color of links on hover */
+ul.topnav li a:hover {background-color: #ff5451;}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: inline-block; float: right;}
+
+ /* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+.logo{
+  height: 55px;
+  width:  55px;
+  padding: 0px 0px;
+}
+
+.jumbotron{
+  margin-bottom: 0px;
+  background-image: url(https://hd.unsplash.com/photo-1459011200906-bc15a5c65573);
+  background-position: 0% 25%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  text-shadow: black 0.3em 0.3em 0.3em;
+}

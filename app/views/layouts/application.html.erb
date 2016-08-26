@@ -1,12 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>GrupoOlimpo</title>
+  <title>Grupo Olimpo</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="http://localhost:3000/properties">
+      <img src="http://www.grupoolimpo.com.mx/imagenes/olimpo.jpg" alt = "logo" class = "logo">
+    </a>
+      <li><a class="texto" href="http://localhost:3000/properties/rentas">Renta</a></li>
+      <li><a class="texto" href="http://localhost:3000/properties/ventas">Venta</a></li>
+    </ul>
+    <p class="texto" style="float: right">+52 272 72 63967</p>
+  </div>
+</nav>
 
 <%= yield %>
 

@@ -1,8 +1,12 @@
 Rails.application.routes.draw do
   root to: "properties#index"
-  resources :properties, only: [:index]
+  resources :properties, only: [:index, :new, :create]
+  resources :admin, only: [:index]
+
   get 'properties/ventas' => 'properties#ventas'
-    get 'properties/rentas' => 'properties#rentas'
+  get 'properties/rentas' => 'properties#rentas'
+  
+  resource :session, only: [:new, :create]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

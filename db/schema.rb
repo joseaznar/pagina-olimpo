@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160825150448) do
+ActiveRecord::Schema.define(version: 20160826220310) do
 
   create_table "properties", force: :cascade do |t|
     t.string  "nombre"
@@ -22,12 +22,6 @@ ActiveRecord::Schema.define(version: 20160825150448) do
     t.float   "precio_renta"
     t.boolean "venta"
     t.float   "precio_venta"
-    t.boolean "terreno",          default: false
-    t.boolean "local",            default: false
-    t.boolean "casa",             default: false
-    t.boolean "departamento",     default: false
-    t.boolean "bodega",           default: false
-    t.boolean "oficina",          default: false
   end
 
 end
